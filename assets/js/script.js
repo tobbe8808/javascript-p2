@@ -1,9 +1,9 @@
 
 const section = document.querySelector("section");
-const Gamelives = document.querySelector("span");
-const Gamelivescount = 8;
+const Lives = document.querySelector("span");
+const GameLives = 8;
 
-Gamelivescount.textContent = Gamelives;
+Lives.textContent = GameLives;
 
 
 const getData = () => [
@@ -33,6 +33,33 @@ const getData = () => [
     { imgSrc: "assets/images/dog11.jpg", name: "dog11" },
     { imgSrc: "assets/images/dog12.jpg", name: "dog12" },
     ];
+
+    const randomize = () => {
+       const cardData = getData();
+       cardData.sort(() => Math.random() - 0.5);
+       return cardData;
+    };
+    
+    const cardGenerator = () => {
+        const cardData = randomize();
+
+        cardData.forEach(item => {
+        const card = document.createElement("div");
+        const face = document.createElement("img");
+        const back = document.createElement("div");
+        card.classList = "card";
+        face.classList = "face";
+        back.classList = "back";
+
+        section.appendChild(card);
+        card.appendChild(face);
+        card.appendChild(back);
+        });
+    };
+
+    cardGenerator();
+
+
 
     
   
