@@ -50,6 +50,9 @@ const getData = () => [
         card.classList = "card";
         face.classList = "face";
         back.classList = "back";
+        
+        // Makes it so you can see the cards on the page //
+        face.src = item.imgSrc;
 
         section.appendChild(card);
         card.appendChild(face);
