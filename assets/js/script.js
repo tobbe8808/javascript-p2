@@ -1,4 +1,3 @@
-
 const section = document.querySelector("section");
 const Lives = document.querySelector("span");
 const GameLives = 8;
@@ -43,7 +42,7 @@ const getData = () => [
     const cardGenerator = () => {
         const cardData = randomize();
 
-        cardData.forEach(item => {
+        cardData.forEach((item) => {
         const card = document.createElement("div");
         const face = document.createElement("img");
         const back = document.createElement("div");
@@ -53,14 +52,26 @@ const getData = () => [
         
         // Makes it so you can see the cards on the page //
         face.src = item.imgSrc;
+        card.setAttribute("name", item.name);
+
 
         section.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
+
+        card.addEventListener("click", () => {
+            card.classList.toggle("toggleCard");
+ 
+
+
         });
+    });
     };
 
     cardGenerator();
+
+
+    
 
 
 
