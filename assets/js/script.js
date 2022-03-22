@@ -110,6 +110,7 @@ const checkCards = (e) => {
     }
     //see if we won.
     if (toggleCard.length === 24) {
+        clearInterval(time);
         swal({
             title: "Good job!",
             text: "You won the Game",
@@ -143,7 +144,7 @@ const restart = (text) => {
 // countdown timer
 
 const starTiming = 60;
-let time = starTiming * 60;
+let time = starTiming * 2;
 
 const count = document.getElementById("countdowntimer");
 setInterval(updatetimer, 1000);
@@ -164,7 +165,8 @@ function updatetimer(){
         }).then(function() {
             window.location = "game.html";
         });
-
+        
+        
 }
 }
 
