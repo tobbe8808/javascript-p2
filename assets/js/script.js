@@ -110,7 +110,7 @@ const checkCards = (e) => {
     }
     //see if we won.
     if (toggleCard.length === 24) {
-        clearInterval(Myinterval);
+        clearInterval(counter);
         swal({
             title: "Good job!",
             text: "You won the Game",
@@ -147,7 +147,7 @@ const starTiming = 60;
 let time = starTiming * 2;
 
 const count = document.getElementById("countdowntimer");
-const Myinterval = setInterval(updatetimer, 1000);
+const counter = setInterval(updatetimer, 1000);
 function updatetimer(){ 
     const minutes = Math.floor(time/60);
     let seconds = time % 60;
