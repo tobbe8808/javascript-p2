@@ -1,3 +1,4 @@
+
 const section = document.querySelector("section");
 const Lives = document.querySelector("span");
 let GameLives = 8;
@@ -128,6 +129,7 @@ const restart = (text) => {
 
 cardGenerator();
     
+
 
 
 
