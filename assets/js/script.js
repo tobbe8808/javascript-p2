@@ -97,13 +97,27 @@ const checkCards = (e) => {
         GameLives--;
         Lives.textContent = GameLives;
         if (GameLives === 0) { 
-            restart("You loose!");
+            swal({
+           title: "You loose!",
+           text: "Dont worry you can try again!",
+           icon: "error",
+           button: "Try again!",
+              }).then(function() {
+                window.location = "game.html";
+            });
         }
     }
     }
     //see if we won.
     if (toggleCard.length === 24) {
-        restart("You won the game, Good Job!");
+        swal({
+            title: "Good job!",
+            text: "You won the Game",
+            icon: "success",
+            button: "Try again you are a champ!",
+          }).then(function() {
+            window.location = "game.html";
+        });
     }
 };
 
@@ -128,7 +142,7 @@ const restart = (text) => {
 
 // countdown timer
 
-const starTiming = 0.5;
+const starTiming = 60;
 let time = starTiming * 60;
 
 const count = document.getElementById("countdowntimer");
@@ -150,7 +164,7 @@ function updatetimer(){
         }).then(function() {
             window.location = "game.html";
         });
-////
+
 }
 }
 
