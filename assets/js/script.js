@@ -126,7 +126,9 @@ const restart = (text) => {
     setTimeout(() => window.alert(text), 100);
 };
 
-const starTiming = 2;
+// countdown timer
+
+const starTiming = 0.5;
 let time = starTiming * 60;
 
 const count = document.getElementById("countdowntimer");
@@ -137,8 +139,20 @@ function updatetimer(){
     seconds = seconds < 10 ? '0' + seconds : seconds;
     count.innerHTML = `${minutes}:${seconds}`;
     time--;
+    
+    if (minutes <= 0 && seconds <= 00) {
+        clearInterval((time = 0));
+        swal({
+            title: "You loose!",
+           text: "Dont worry you can try again!",
+           icon: "error",
+           button: "Try again!",
+        }).then(function() {
+            window.location = "game.html";
+        });
+////
 }
-
+}
 
 cardGenerator();
     

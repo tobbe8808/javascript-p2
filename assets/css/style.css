@@ -98,6 +98,18 @@ a {
     background-color: yellow;
   }
 
+  #countdowntimer {
+    background:#3b5277;
+    color:#FFF;
+    text-align:center;
+    width:400px;
+    height:100px;
+    line-height:100px;
+    font-size:30px;
+    margin:100px auto;
+    border:5px solid #fff
+  }
+
 
 
 
