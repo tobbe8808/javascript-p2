@@ -126,6 +126,19 @@ const restart = (text) => {
     setTimeout(() => window.alert(text), 100);
 };
 
+const starTiming = 2;
+let time = starTiming * 60;
+
+const count = document.getElementById("countdowntimer");
+setInterval(updatetimer, 1000);
+function updatetimer(){ 
+    const minutes = Math.floor(time/60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    count.innerHTML = `${minutes}:${seconds}`;
+    time--;
+}
+
 
 cardGenerator();
     
