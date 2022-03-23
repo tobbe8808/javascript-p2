@@ -1,4 +1,4 @@
-let start = document.querySelector('#brand');
+let start = document.querySelector('#swing');
 let ex = 10;
 function swing(element) {
 

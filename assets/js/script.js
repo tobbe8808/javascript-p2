@@ -5,7 +5,7 @@ let GameLives = 8;
 
 Lives.textContent = GameLives;
 
-
+// Images.
 const getData = () => [
 
     { imgSrc: "assets/images/dog1.jpg", name: "dog1" },
@@ -34,6 +34,7 @@ const getData = () => [
     { imgSrc: "assets/images/dog12.jpg", name: "dog12" },
     ];
 
+    //randomizes the cards.
     const randomize = () => {
        const cardData = getData();
        cardData.sort(() => Math.random() - 0.5);
@@ -94,6 +95,9 @@ const checkCards = (e) => {
             card.classList.remove("flipped");
             setTimeout(() => card.classList.remove("toggleCard"), 1000 );
         });
+       
+        // if game lives 0 you loose.
+        
         GameLives--;
         Lives.textContent = GameLives;
         if (GameLives === 0) { 
@@ -108,7 +112,7 @@ const checkCards = (e) => {
         }
     }
     }
-    //see if we won.
+    //see if we won if won stop timer.
     if (toggleCard.length === 24) {
         clearInterval(counter);
         swal({
@@ -155,6 +159,7 @@ function updatetimer(){
     count.innerHTML = `${minutes}:${seconds}`;
     time--;
     
+    // code to loose if timer hits 0.
     if (minutes <= 0 && seconds <= 00) {
         clearInterval((time = 0));
         swal({

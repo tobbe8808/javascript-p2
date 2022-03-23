@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap');
+/*Select all elements*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*body sets background picture and font-family and design */
 
 body {
   background-image: url("/assets/images/backgroundmain.jpg");
@@ -19,7 +21,7 @@ background-size: cover;
 }
 
 
-
+/*sets how the cards show on the page*/
 section {
   display: grid;
   grid-template-rows: repeat(4, 12rem);
@@ -27,7 +29,7 @@ section {
   perspective: 800px; 
   grid-gap: 1rem;
 }
-
+/*styling of the cards used*/
 .card {
   transform-style: preserve-3d;
   transition: transform 1s;
@@ -42,28 +44,30 @@ section {
   height: 100%;
   pointer-events: none;
 }
-
+/*image and styling of the back of the card*/
 .back {
 background-image: url("/assets/images/backcards.PNG");
 background-position: center;
 backface-visibility: hidden;
 }
-
+/*rotates card 180 degrees*/
 .toggleCard {
   transform: rotateY(180deg);
 }
-    
+
+    /* The landing page background picture and style*/
 #firstPage{
   background: url(/assets/images/firstpageback.jpg) center center no-repeat;
   background-size: cover;
   
+  /*design for landing page image that moves */
 }
-#brand{  
+#swing{  
   text-align:center;
   cursor:pointer;
   
 }
-#brand img{
+#swing img{
   display:block;
   width:80vw;
   max-width:700px;
@@ -71,7 +75,7 @@ backface-visibility: hidden;
   transition:0.2s
   
 }
-#brand a{
+#swing a{
   display:block;
   font-size:3em;
   color:black;
@@ -81,10 +85,12 @@ backface-visibility: hidden;
   padding:5px 15px;
   transition:0.4s
 }
-#brand:hover a{  
+#swing:hover a{  
   color:rgba(200,80,50,1);
   text-shadow:2px 5px 0 rgba(0,0,0,0.6)
 }
+
+/*design for The twitter link */
 
 a {
   color:rgba(0, 255, 0, 0.69);
@@ -98,18 +104,30 @@ a {
     background-color: yellow;
   }
 
+  /*countdown timer style*/
   #countdowntimer {
-    background:#3b5277;
-    color:#FFF;
-    text-align:center;
-    width:400px;
-    height:100px;
-    line-height:100px;
     font-size:30px;
-    margin:100px auto;
-    border:5px solid #fff
+   
   }
 
+  /*made by tobias styling of text*/
+  h2 {
+    font-size:30px;
+    text-align: center;
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes blink {
+    from {
+        color:black;
+    }
+    to {
+        color:greenyellow;
+    }
+}
 
 
 
