@@ -160,7 +160,7 @@ function updatetimer(){
     time--;
     
     // code to loose if timer hits 0.
-    if (minutes <= 0 && seconds <= 00) {
+    if (minutes <= 0 && seconds <= 0) {
         clearInterval((time = 0));
         swal({
             title: "You loose!",
