@@ -1,3 +1,5 @@
+// Landing page movement for the swing picture.
+
 let start = document.querySelector('#swing');
 let ex = 10;
 function swing(element) {

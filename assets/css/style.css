@@ -9,7 +9,7 @@
 /*body sets background picture and font-family and design */
 
 body {
-  background-image: url("/assets/images/backgroundmain.jpg");
+  background-image: url("/assets/images/firstpageback.jpg");
 background-repeat: no-repeat;
 background-size: cover;
   display: flex;
@@ -61,7 +61,7 @@ backface-visibility: hidden;
   background: url(/assets/images/firstpageback.jpg) center center no-repeat;
   background-size: cover;
   
-  /*design for landing page image that moves */
+  /*design for landing page image that moves and changes on hover */
 }
 #swing{  
   text-align:center;

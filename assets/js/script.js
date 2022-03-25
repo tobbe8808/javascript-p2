@@ -1,10 +1,11 @@
+// Taking the section and span from the html
 const section = document.querySelector("section");
 const Lives = document.querySelector("span");
 let GameLives = 8;
 
 Lives.textContent = GameLives;
 
-// Images.
+// Images
 const getData = () => [
 
     { imgSrc: "assets/images/dog1.jpg", name: "dog1" },
@@ -76,7 +77,7 @@ const checkCards = (e) => {
     const toggleCard = document.querySelectorAll(".toggleCard");
     console.log("flippedcards");
     
-    //
+    // Logic for game matching and wrong match.
     if (flippedCards.length === 2) {
     if (
         flippedCards[0].getAttribute("name") === 
