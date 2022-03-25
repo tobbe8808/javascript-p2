@@ -114,6 +114,7 @@ a {
 
   /*made by tobias styling of text*/
   h2 {
+    background-color:rebeccapurple;
     font-size:30px;
     text-align: center;
     animation-duration: 1200ms;
@@ -145,6 +146,7 @@ a {
 }
 
 
+
 @media (max-width: 990px) {
   
   section {
@@ -168,13 +170,24 @@ a {
 @media (max-width: 600px) {
   
   section {
-      grid-template-columns: repeat(6, 6rem);
-      grid-template-rows: repeat(4, 6rem); 
+      grid-template-columns: repeat(6, 5rem);
+      grid-template-rows: repeat(4, 5rem); 
       height: 90%;
       
   }
 }
 
+@media (max-width: 600px) {
+  
+  section {
+      grid-template-columns: repeat(6, 4rem);
+      grid-template-rows: repeat(4, 4rem); 
+      height: 90%;
+      
+  }
+}
+
+/* Landing page small screens */
 @media (max-width: 410px) {
   
   section {
@@ -183,4 +196,10 @@ a {
       height: 90%;
       
   }
+}
+/* index page Media Query */
+@media (max-width: 410px) {
+  a {
+    font-size: large;
+}
 }
