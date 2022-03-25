@@ -126,7 +126,7 @@ const checkCards = (e) => {
     }
 };
 
-const restart = (text) => {
+
     let cardData = randomize();
     let faces = document.querySelectorAll(".face");
     let cards = document.querySelectorAll(".card");
@@ -142,8 +142,8 @@ const restart = (text) => {
     });
     GameLives = 8;
     Lives.textContent = GameLives;
-    setTimeout(() => window.alert(text), 100);
-};
+    setTimeout(() => window.alert(), 100);
+
 
 // countdown timer
 
