@@ -27,7 +27,7 @@ section {
   grid-template-rows: repeat(4, 12rem);
   grid-template-columns: repeat(6, 12rem);
   perspective: 800px; 
-  grid-gap: 1rem;
+  grid-gap: 0.2rem;
 }
 /*styling of the cards used*/
 .card {
@@ -46,9 +46,10 @@ section {
 }
 /*image and styling of the back of the card*/
 .back {
-background-image: url("/assets/images/backcards.PNG");
+background: url("/assets/images/backcards.jpg");
 background-position: center;
 backface-visibility: hidden;
+
 }
 /*rotates card 180 degrees*/
 .toggleCard {
@@ -93,7 +94,8 @@ backface-visibility: hidden;
 /*design for The twitter link */
 
 a {
-  color:rgba(0, 255, 0, 0.69);
+  background-color:rebeccapurple;
+  color:limegreen;
   text-decoration:none; 
   cursor: crosshair;
   font-size: xx-large;
@@ -125,11 +127,60 @@ a {
         color:black;
     }
     to {
-        color:greenyellow;
+        color:whitesmoke;
     }
 }
 
+/*Media queries*/
+
+@media (max-width: 1280px) {
+  
+  section {
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(4, 10rem);
+    height: 90%;
+ 
+
+  }
+}
 
 
+@media (max-width: 990px) {
+  
+  section {
+      grid-template-columns: repeat(6, 8rem);
+      grid-template-rows: repeat(4, 8rem);
+      height: 90%;
+      
+  }
+}
 
+@media (max-width: 795px) {
+  
+  section {
+      grid-template-columns: repeat(6, 6rem);
+      grid-template-rows: repeat(4, 6rem); 
+      height: 90%;
+      
+  }
+}
 
+@media (max-width: 600px) {
+  
+  section {
+      grid-template-columns: repeat(6, 6rem);
+      grid-template-rows: repeat(4, 6rem); 
+      height: 90%;
+      
+  }
+}
+
+@media (max-width: 410px) {
+  
+  section {
+      grid-template-columns: repeat(6, 3rem);
+      grid-template-rows: repeat(4, 3rem); 
+      height: 90%;
+      
+  }
+}
