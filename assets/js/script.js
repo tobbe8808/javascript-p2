@@ -33,7 +33,7 @@ const getData = () => [
     { imgSrc: "assets/images/dog11.jpg", name: "dog11" },
     { imgSrc: "assets/images/dog12.jpg", name: "dog12" },
     ];
-
+    
     //randomizes the cards.
     const randomize = () => {
        const cardData = getData();
@@ -55,13 +55,15 @@ const getData = () => [
         back.classList = "back";
         
         // Makes it so you can see the cards on the page //
+
         face.src = item.imgSrc;
         card.setAttribute("name", item.name);
-
+        face.setAttribute("alt", item.name);
 
         section.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
+        
 
         card.addEventListener("click", (e) => {
             card.classList.toggle("toggleCard");
