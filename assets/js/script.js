@@ -1,4 +1,3 @@
-
 const section = document.querySelector("section");
 const Lives = document.querySelector("span");
 let GameLives = 8;
@@ -126,25 +125,6 @@ const checkCards = (e) => {
     }
 };
 
-
-    let cardData = randomize();
-    let faces = document.querySelectorAll(".face");
-    let cards = document.querySelectorAll(".card");
-    cardData.forEach((item, index) => {
-    cards[index].classList.remove('toggleCard');
-
-    setTimeout(() => {
-    cards[index].style.pointerEvents = "all";
-    faces[index].src = item.imgSrc;
-    cards[index].setAttribute("name", item.name);
-    section.style.pointerEvents = "all";
-    }, 1000);
-    });
-    GameLives = 8;
-    Lives.textContent = GameLives;
-    setTimeout(() => window.alert(), 100);
-
-
 // countdown timer
 
 const starTiming = 60;
@@ -176,6 +156,8 @@ function updatetimer(){
 }
 
 cardGenerator();
+
+
     
 
 
