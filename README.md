@@ -47,7 +47,7 @@ When you hover over it starts to change colors in many different variations.<br>
 
 The twitter background is in Rebeccapurple color.<br>
 The text is Limegreen.<br>
-On hover it turns limegreen as in picture below.<br>
+On hover it turns yellow as in picture below.<br>
 font-size used is xx-large.<br>
 
 ![alt twitterhover](./assets/READMEimages/twitter2.PNG)<br>
@@ -226,6 +226,15 @@ The undefined variable swal showing up is from sweetalets cause the validator do
 **swing.js**<br>
 ![alt htmlVALII](./assets/READMEimages/swingjs.PNG)
 
+## Browser testing<br>
+- Tested in google chrome and site works good.<br>
+- Tested in FireFox and site works good.<br>
+- tested in Opera and site works good.<br>
+- not tested on safari cause i dont own any macs, and i cant run it on pc.<br>
+**I installed firefox and opera on my pc to try the website**<br>
+
+
+
 ## Responsive
 
 I coded the website with media queries to be responsive on diffrent resolutions.<br>
@@ -261,7 +270,7 @@ I did a major test of functions.<br>
 
 ### Game page<br>
 
-## page
+## Page<br>
 - The background picture loads<br>
 - The card board loads with front and back pictures.<br>
 
@@ -373,6 +382,7 @@ And now the test branch code and commits are in the main branch.<br>
 - code for swing.js [codepen](https://codepen.io/nodws/pen/aVBoVp)
 - [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/)
 - Slack asking questions and researching to see if someone else had the same problems as me.
+- Code institute Tutor help.
 
 ## Images
 - Font i used was taken from [Google fonts](https://fonts.google.com/)
