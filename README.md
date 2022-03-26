@@ -249,6 +249,55 @@ It works on all the devices on the picture below.<br>
 
 ![alt responsive](./assets/READMEimages/responsive.PNG)<br>
 
+## Testing functions so they work<br>
+
+### Landing page<br>
+
+I did a major test of functions.<br>
+- First I checked so the picture on the landing page was swinging when I was hovering over it and that the text started blinking.<br>
+- I checked so the hover color worked on the twitter link and that the link opens in another tab.<br>
+- I checked so the Made by Tobias was blinking.<br>
+- I checked so that everything was loading background and the picture.<br>
+
+### Game page<br>
+
+## page
+- The background picture loads<br>
+- The card board loads with front and back pictures.<br>
+
+## Timer<br>
+
+- First i checked so the timer was starting.<br>
+- Checked so the timer stop on 0 seconds and give us the lose popup.<br>
+- Checked so the timer stops when you win.<br>
+- Checked so the timer restarts after a lose or win when you click try again on the win/lose popup.<br>
+
+
+
+## Lives<br>
+
+- Checked so the lives counts down when you chose two wrong pictures.<br>
+- Checked so you get a lose popup when you are at 0 lifes.<br>
+- checked so it resets after you lose or win after the popup.<br>
+
+## flipping cards<br>
+
+- You can flip more than two cards at a time, but it won't help you cause you still lose life cause I want it to be fast paced.<br>
+- When you find two different pictures the pictures flip back.<br>
+- When you find two of the same cards the cards stay up.<br>
+- When you find all pairs on the board it gives you the win popup.<br>
+
+## SweetAlerts<br>
+
+- The sweet alets gives a popup when you run out of time.<br>
+- The sweet alerts gives a popup when you have 0 lives.<br>
+- The sweet alets gives a popup when you find all cards.<br>
+- The game starts over after any alert win or lose.<br>
+
+## Testing Functions end statement<br>
+
+All the testing in this steps worked, what I was expecting did happen as I wanted and expected.
+
 ## Solved bugs<br>
 ### Bug 1<br>
 I had some problems to get my timer to stop counting down when you wont the game.<br>
@@ -280,6 +329,64 @@ That code made all the images get an alt tag and the accessibility score went up
 ### Unsolved bugs<br>
 
 None that i know of.<br>
+
+# Deployment<br>
+
+## Github pages<br>
+
+### Upload to Github pages<br>
+
+1. I started by choosing the Repository that i wanted to upload to github pages.<br>
+2. I choose the main branch since i got a test branch as well.<br>
+3. Then i clicked on settings.<br>
+4. I scrolled down to GitHub Pages and clicked Check it out here.<br>
+5. Then i choose the main Branch and root and then save.<br>
+6. It's now uploaded to Github pages.<br>
+
+### Test Branch
+
+I did a lot of coding in the test Branch I made so if I did something wrong I wouldn't be a big deal.<br>
+You click on the main branch in Repository and make a new branch and code from that branch.<br>
+
+### Merging 
+
+After I feelt like I was done in the test branch I merged the test branch into the main branch.<br>
+i did this using git.<br>
+git checkout main<br>
+git merge test<br>
+git add .<br>
+git commit -m "text"<br>
+git push<br>
+And now the test branch code and commits are in the main branch.<br>
+
+# Credits
+
+## Code taken from
+- [Flexbox](https://tipsmake.com/use-the-flexbox-page-layout-in-css)  
+- [Stackoverflow](https://stackoverflow.com/)  
+- Script and code for the win/lose popup [SweetAlerts](https://sweetalert.js.org/guides/#installation)  
+- Countdown timer from DThompsonDev on [Youtube](https://www.youtube.com/watch?v=IOlnFbVLE8s)
+- W3schools stop timer [W3schools](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+- Meta tags [Metatags](https://www.searchenginewatch.com/2018/04/04/a-quick-and-easy-guide-to-meta-tags-in-seo/)
+- Creating a card game [taniarascia](https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/)
+- code for cardgame DEV ED [youtube](https://www.youtube.com/watch?v=-tlb4tv4mC4)
+- code for swing.js [codepen](https://codepen.io/nodws/pen/aVBoVp)
+- [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/)
+- Slack asking questions and researching to see if someone else had the same problems as me.
+
+## Images
+- Font i used was taken from [Google fonts](https://fonts.google.com/)
+- All images was taken from [Pexel](https://www.pexels.com/)
+- The twitter icon i used was taken from [Fontawesome](https://fontawesome.com/)
+- The making of the Landing page dog picture with text [Freewebheaders](https://www.freewebheaders.com/header-maker/)
+
+
+
+
+
+
+
+
 
 
 
