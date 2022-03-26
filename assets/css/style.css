@@ -9,7 +9,7 @@
 /*body sets background picture and font-family and design */
 
 body {
-  background-image: url("/assets/images/firstpageback.jpg");
+  background-image: url("../images/firstpageback.jpg");
 background-repeat: no-repeat;
 background-size: cover;
   display: flex;
@@ -46,7 +46,7 @@ section {
 }
 /*image and styling of the back of the card*/
 .back {
-background: url("/assets/images/backcards.jpg");
+background: url("../images/backcards.jpg");
 background-position: center;
 backface-visibility: hidden;
 
