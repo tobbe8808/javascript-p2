@@ -58,7 +58,7 @@ backface-visibility: hidden;
 
     /* The landing page background picture and style*/
 #firstPage{
-  background: url(/assets/images/firstpageback.jpg) center center no-repeat;
+  background: url(../images/firstpageback.jpg) center center no-repeat;
   background-size: cover;
   
   /*design for landing page image that moves and changes on hover */
