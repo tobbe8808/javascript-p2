@@ -145,8 +145,6 @@ a {
   }
 }
 
-
-
 @media (max-width: 990px) {
   
   section {
@@ -177,7 +175,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   
   section {
       grid-template-columns: repeat(6, 4rem);
@@ -187,7 +185,6 @@ a {
   }
 }
 
-/* Landing page small screens */
 @media (max-width: 410px) {
   
   section {
@@ -197,7 +194,17 @@ a {
       
   }
 }
-/* index page Media Query */
+
+@media (max-width: 310px) {
+  
+  section {
+      grid-template-columns: repeat(6, 2rem);
+      grid-template-rows: repeat(4, 2rem); 
+      height: 90%;
+      
+  }
+}
+/* Landing page small screens */
 @media (max-width: 410px) {
   a {
     font-size: large;
