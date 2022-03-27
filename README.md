@@ -370,7 +370,7 @@ And now the test branch code and commits are in the main branch.<br>
 
 # Credits
 
-## Code taken from
+## Code/Reference
 - [Flexbox](https://tipsmake.com/use-the-flexbox-page-layout-in-css)  
 - [Stackoverflow](https://stackoverflow.com/)  
 - Script and code for the win/lose popup [SweetAlerts](https://sweetalert.js.org/guides/#installation)  
