@@ -151,7 +151,7 @@ Below the Lives and timer functions you got 4 rows with 6 cards in every row and
 **Win popup**<br>
 ![alt win](./assets/READMEimages/win.PNG)<br>
 
-**lose popup**<br>
+**Lose popup**<br>
 ![alt loose](./assets/READMEimages/loose.PNG)<br>
 
 # Technologies Used
@@ -229,8 +229,8 @@ The undefined variable swal showing up is from sweetalets cause the validator do
 ## Browser testing<br>
 - Tested in google chrome and site works good.<br>
 - Tested in FireFox and site works good.<br>
-- tested in Opera and site works good.<br>
-- not tested on safari cause i dont own any macs, and i cant run it on pc.<br>
+- Tested in Opera and site works good.<br>
+- Not tested on safari cause i dont own any macs, and i cant run it on pc.<br>
 **I installed firefox and opera on my pc to try the website**<br>
 
 
